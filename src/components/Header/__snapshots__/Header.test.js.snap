@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="header-wrapper"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="header"
+      >
+        <button
+          class="header-btn-logo"
+          data-testid="go-to-home"
+        >
+          <img
+            alt="logo mercado libre"
+            class="header-img"
+            height="36"
+            src="logo-meli.png"
+            width="53"
+          />
+        </button>
+        <form
+          class="header-search"
+          data-testid="go-items"
+        >
+          <input
+            class="search-bar"
+            data-testid="search-bar"
+            placeholder="Nunca dejes de buscar"
+            type="text"
+          />
+          <button
+            class="search-btn"
+            type="submit"
+          >
+            <img
+              alt="icon search"
+              height="18"
+              src="icon-search.png"
+              width="18"
+            />
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;

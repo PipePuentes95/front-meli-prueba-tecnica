@@ -1,16 +1,14 @@
 import React from 'react'
 import './Breadcrumb.scss'
 
-const Breadcrumb = () => {
+const Breadcrumb = ({ categories = [] }) => {
 
   return (
     <div className='breadcrumb'>
       <div className="breadcrumb-content">
-        <span className='breadcrumb-item'>Electronica, Audio y Video</span>
-        <span className='breadcrumb-item'>iPod</span>
-        <span className='breadcrumb-item'>Reproductores</span>
-        <span className='breadcrumb-item'>iPod touch</span>
-        <span className='breadcrumb-item'>iPod 32 GB</span>
+        { categories.map((category) => (
+          <span className='breadcrumb-item' key={ category }>{ category }</span>
+        )) }
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-import Breadcrumb from '../Breadcrumb/Breadcrumb';
 import CurrentProduct from '../CurrentProduct/CurrentProduct';
 import Loader from '../Loader/Loader';
 
@@ -15,7 +14,6 @@ const ProductDetail = () => {
 
   const getProduct = async (id) => {
     const { data } = await axios.get(`http://localhost:4001/api/items/${id}`);
-    console.log(data);
     setProduct(data.item);
   }
 
@@ -30,7 +28,6 @@ const ProductDetail = () => {
   return (
     <div className="product-detail">
       <div className='container'>
-        <Breadcrumb />
         <CurrentProduct 
           picture={ product?.picture }
           condition={ product?.condition }

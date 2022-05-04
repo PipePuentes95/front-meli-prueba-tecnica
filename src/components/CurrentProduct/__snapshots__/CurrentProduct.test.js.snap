@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="current-product"
+  >
+    <div
+      class="cp-content"
+    >
+      <div
+        class="cp-img__wrapper"
+      >
+        <img
+          alt="img product"
+          height="800"
+          src="http://http2.mlstatic.com/D_950723-MLA47397900331_092021-I.jpg"
+          width="800"
+        />
+      </div>
+      <div
+        class="cp-summary"
+      >
+        <div
+          class="cp-condition-and-sold"
+        >
+          <span>
+            new
+          </span>
+           -  
+          <span>
+            25 vendidos
+          </span>
+        </div>
+        <h3
+          class="cp-product-name"
+        >
+          Zapatillas Para Hombre Topper Squat Color Negro - Adulto 42 Ar
+        </h3>
+        <p
+          class="cp-price"
+        >
+          <span
+            class="cp-price__amount"
+          >
+            $ 9.799
+          </span>
+        </p>
+        <button
+          class="btn-buy"
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+    <div
+      class="cp-description"
+    >
+      <h4
+        class="cp-description__title"
+      >
+        Descripción del producto
+      </h4>
+      <p
+        class="cp-description__content"
+      >
+        Topper se destaca en el mercado por ofrecer productos de calidad, confort y diseño que unen moda y deporte. Acerca tendencias y busca que las personas puedan verse y sentirse bien dentro y fuera del campo de juego.  
+
+Suela de goma 
+Las zapatillas fabricadas con suela de goma tienen mayor resistencia al desgaste, son naturalmente impermeables y flexibles, y además extienden la estabilidad de la contracción.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

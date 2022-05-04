@@ -3,7 +3,6 @@ import React from 'react';
 import './CurrentProduct.scss'
 
 const CurrentProduct = ({
-  id,
   picture,
   condition,
   sold_quantity,

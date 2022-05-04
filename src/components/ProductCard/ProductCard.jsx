@@ -30,7 +30,7 @@ const ProductCard = ({
   }
 
   return (
-    <div className='product-card' onClick={ handlerGoToProductDetail }>
+    <div className='product-card' onClick={ handlerGoToProductDetail } data-testid="go-to-product">
       <div className="pc-img">
         <div className="pc-img__wrapper">
           <img src={ picture } alt="img test" width="180" height="180" />

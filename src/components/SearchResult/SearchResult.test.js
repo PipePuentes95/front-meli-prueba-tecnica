@@ -2,16 +2,15 @@ import { render } from '@testing-library/react';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 
-import App from './App';
+import SearchResult from './SearchResult';
 
 it('should take a snapshot', () => {
   const pathname = createMemoryHistory();
   const { asFragment } = render (
     <Router location={ pathname.location }>
-      <App />
+      <SearchResult />
     </Router>
   )
 
-  expect(asFragment(<App />)).toMatchSnapshot();
+  expect(asFragment(<SearchResult />)).toMatchSnapshot();
 });
-

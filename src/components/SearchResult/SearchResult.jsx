@@ -13,6 +13,7 @@ const SearchResult = () => {
   const [searchParams] = useSearchParams();
 
   const [items, setItems] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [withoutResults, setWithoutResults] = useState(false);
 
   const getSearchResult = async (params) => {
@@ -21,9 +22,12 @@ const SearchResult = () => {
 
     const { data } = await axios.get(`http://localhost:4001/api/items?q=${ params }`);
 
+    const categories = data.categories.filter((_, index) => index < 5);
+
     if(data.length === 0) return setWithoutResults(true);
     setWithoutResults(false);
     setItems(data.items);
+    setCategories(categories);
   }
 
   useEffect(()=> {
@@ -35,7 +39,7 @@ const SearchResult = () => {
     <div className="search-result">
       { (items.length !== 0 && !withoutResults) && (
         <div className='container'>
-          <Breadcrumb />
+          <Breadcrumb categories={ categories } />
             <div className='products'>
               <div className="products__wrapper">
                 { items.map((item) => (

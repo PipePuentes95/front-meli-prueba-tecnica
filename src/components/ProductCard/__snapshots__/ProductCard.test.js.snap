@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="product-card"
+    data-testid="go-to-product"
+  >
+    <div
+      class="pc-img"
+    >
+      <div
+        class="pc-img__wrapper"
+      >
+        <img
+          alt="img test"
+          height="180"
+          src="http://http2.mlstatic.com/D_947304-MLA48082618871_102021-O.jpg"
+          width="180"
+        />
+      </div>
+    </div>
+    <div
+      class="pc-content"
+    >
+      <div
+        class="pc-content-header"
+      >
+        <div
+          class="pc-price"
+        >
+          <p
+            class="price"
+          >
+            $ 10.499
+          </p>
+          <img
+            alt="icon free shipping"
+            class="free-shipping"
+            height="18"
+            src="icon-free-shipping.png"
+            width="18"
+          />
+        </div>
+        <div
+          class="pc-location"
+        >
+          <span
+            class="location"
+          >
+            Buenos Aires
+          </span>
+        </div>
+      </div>
+      <div
+        class="pc-content-body"
+      >
+        <p
+          class="pc-title"
+        >
+          Zapatillas adidas Coreracer 2771 Mark
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
