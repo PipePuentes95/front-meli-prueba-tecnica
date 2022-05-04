@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 import './Header.scss';
 import logo from '../../assets/logo-meli.png';
