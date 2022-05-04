@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.breadcrumb {
+  @media(max-width: 764px) {
+    width: 100%;
+  }
+
+  width: 80%;
+
+  margin: 0 auto;
+  padding: 16px 0;
+
+  .breadcrumb-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media(max-width: 576px) {
+      margin-bottom: -5px;
+    }
+
+    .breadcrumb-item {
+
+      @media(max-width: 576px) {
+        padding-bottom: 5px;
+      }
+
+      font-size: 14px;
+      color: $grey-3;
+
+      &:not(:last-of-type):after {
+        margin: 0px 8px;
+
+        font-size: 22px;
+        line-height: 0;
+    
+        content: '›';
+      }
+    }
+  }
+
+}

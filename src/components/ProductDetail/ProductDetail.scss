@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.product-detail {
+  min-height: calc(100vh - 60px);
+
+  background-color: $grey-4;
+
+  padding-bottom: 16px;
+}
